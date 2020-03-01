@@ -13,6 +13,7 @@ public class onCallList {
 private static final int noOfweeks = 52;
  private static   List<Employee> empList = new ArrayList<Employee>();
 
+ //Accepts User inputs.
 public static int  getNumberOfEmployees(){
 
 
@@ -33,6 +34,7 @@ public static int  getNumberOfEmployees(){
    return  noOfEmployees;
 }
 
+ //Calculates the Weeks list.
 public static void calOnCallList(int noOfEmployees){
 
 
@@ -66,8 +68,9 @@ public static void calOnCallList(int noOfEmployees){
       if(noOfEmployees>=1 && noOfEmployees<53){
 
           calOnCallList(noOfEmployees);
-          
-          for(Employee e : empList){
+       
+        //Prints the Schedule.  
+        for(Employee e : empList){
               System.out.println("Name of the Employee: "+ e.getName());
               System.out.println("Weeklist: " + e.getEmpWeekList());
           }
